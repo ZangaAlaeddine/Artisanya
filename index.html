@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artisanya | Handmade Treasures from Tunisia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: {
+                50: '#fdf4f2',
+                100: '#fbe9e5',
+                200: '#f7d2cb',
+                300: '#f0b1a4',
+                400: '#e5826f',
+                500: '#cc4e38',
+                600: '#bc4631',
+                700: '#9d3a29',
+                800: '#823125',
+                900: '#6c2c22',
+              },
+              brown: {
+                50: '#f7f6f5',
+                100: '#ebe9e6',
+                200: '#d7d2cd',
+                300: '#b8afa6',
+                400: '#998d80',
+                500: '#7d6f61',
+                600: '#5d4037',
+                700: '#4d352e',
+                800: '#3d2b25',
+                900: '#2d201c',
+              },
+              beige: {
+                50: '#fcfbf7',
+                100: '#f8f6ef',
+                200: '#eee9d5',
+                300: '#dfd7b4',
+                400: '#cabc8a',
+                500: '#b5a165',
+                600: '#9f8752',
+                700: '#856d44',
+                800: '#6e5a3b',
+                900: '#5c4b34',
+              }
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #fcfbf7;
+      }
+      .tunisian-pattern {
+        background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      
+      /* Standard animations for Tailwind animate utilities */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes zoomIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes slideInFromBottom {
+        from { transform: translateY(1rem); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes slideInFromTop {
+        from { transform: translateY(-1rem); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      
+      .animate-in {
+        animation-fill-mode: both;
+        animation-duration: 400ms;
+      }
+      .fade-in {
+        animation-name: fadeIn;
+      }
+      .zoom-in {
+        animation-name: zoomIn;
+      }
+      .slide-in-from-bottom-4 {
+        animation-name: slideInFromBottom;
+      }
+      .slide-in-from-top-10 {
+        animation-name: slideInFromTop;
+      }
+      
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+    >
+ 
+
+  

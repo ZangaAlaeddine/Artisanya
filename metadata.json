@@ -1,0 +1,7 @@
+{
+  "name": "Artisanya - Tunisia Handmade Marketplace",
+  "description": "A premium regional marketplace for authentic Tunisian handmade crafts, connecting local artisans with modern buyers. Featuring mini-stores, automated delivery estimation, and AI-powered product enhancements.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
